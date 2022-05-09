@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import Home from './components/Home';
 import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
+import Checkout from './components/Checkout';
 
 function App() {
   return (
@@ -10,18 +11,15 @@ function App() {
     <Router >
       <div className="App">
       {/* <h1>SHAHRUKH KHAN</h1> */}
+            <Header />
         <Switch>
 
-          <Route path='/checkout'>
-            <Header />
-            <h1>Your Cart IS Empty</h1>
+          <Route path="/checkout">
+            <Checkout />
           </Route>
 
-          <Route path='/' >
-          <Header />
-          <Home/>
-
-
+          <Route path="/" >
+            <Home />
           </Route>
           
       </Switch>
