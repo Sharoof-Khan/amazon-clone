@@ -12,6 +12,10 @@ function App() {
       {/* <h1>SHAHRUKH KHAN</h1> */}
         <Switch>
 
+          <Route path='/checkout'>
+            <Header />
+            <h1>Your Cart IS Empty</h1>
+          </Route>
 
           <Route path='/' >
           <Header />
