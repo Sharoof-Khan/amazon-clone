@@ -2,10 +2,35 @@ import React from 'react'
 import StarIcon from '@material-ui/icons/Star';
 import StarHalfIcon from '@material-ui/icons/StarHalf';
 import './Product.css'
+import { useStateValue } from '../context/StateProvider';
 
-const Product = ({title,image,price,rating}) => {
+const Product = ({ id, title, image, price, rating }) => {
+    // console.log(id,'chek');
+
+    // const [state,dispatch] = useStateValue()
+    const [{ cart }, dispatch] = useStateValue()
+    
+    // console.log('Cart is here ==> ==> =>',cart);
+
+    const addToCart = () => {
+
+        dispatch({
+            type: "ADD_TO_CART",
+            item: {
+            /*id: id,
+            title:title*/
+                id,
+                title,
+                image,
+                price,
+                rating
+            },
+        })
+
+         
+    }
   return (
-      <div className='product'>
+      <div className='product' key={id} >
           {/* Product */}
 
           {/* <input type="quantity" /> */}
@@ -34,7 +59,7 @@ const Product = ({title,image,price,rating}) => {
 
           <img src={image} alt="The Lean Startup img" />
 
-          <button>Add to Cart</button>
+          <button onClick={ addToCart}>Add to Cart</button>
 
 
 
