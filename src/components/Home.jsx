@@ -15,7 +15,7 @@ const Home = () => {
           < Product  
             id={nanoid(3)}
             // key = {nanoid(4)}
-            title='The Lean Startup: How Constant Invovation Creates  Radically Successful Businesses Paperback' price='1499' image="https://m.media-amazon.com/images/I/51T-sMqSMiL.jpg" rating={4} />
+            title='The Lean Startup: How Constant Invovation Creates  Radically Successful Businesses Paperback' price={1499} image="https://m.media-amazon.com/images/I/51T-sMqSMiL.jpg" rating={4} />
           {/* Product */}
           <Product  id = {nanoid(3)} title = 'Kenwood kMix Stand Mixer for Baking, Stylish Kitchen Mixer with k-beater,Dough Hook and Whisk, 5 Litre Glass Bowl' price = {4999} rating = {4} image = "https://m.media-amazon.com/images/I/31JjPYpiD2L._AC_SR320,320_.jpg" />
         </div>
