@@ -1,0 +1,79 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+}
+.logonLogo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    object-fit: contain;
+    width: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    /* background-color: black; */
+}
+
+
+.loginContainer{
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 20px;
+
+}
+
+.loginContainer>h1{
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+
+.loginContainer > form{
+    display: flex;
+    flex-direction: column;
+}
+
+.loginContainer  > form >input{
+    margin-top: 10px;
+    outline: none;
+
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: white;
+    width: 98%;
+    /* width: 250px; */
+    border-radius: 2px;
+    border: 1px solid gray;
+    /* margin-bottom: 10px; */
+}
+.loginContainer > form>button{
+    margin-top: 10px;
+    background-color: #f0c14b;
+    border-radius: 2px;
+    width: 98%;
+    height: 30px;
+    border: 1px solid ;
+    border-color: #a88734 #9c7e31 #846a29;
+    /* outline: none; */
+}
+
+.loginContainer>p{
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.loginRegisterBtn{
+    /* color: red  ; */
+    border-radius: 2px;
+    width: 98%;
+    height: 30px;
+    border: 1px solid;
+    border-color: darkgray;
+    margin-top: 10px;
+    
+}

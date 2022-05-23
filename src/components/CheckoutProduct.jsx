@@ -1,9 +1,17 @@
 import React from 'react'
 import './CheckoutProduct.css'
 import StarIcon from '@material-ui/icons/Star';
+import {useStateValue} from '../context/StateProvider'
 
+const CheckoutProduct = ({ id, image, title, price, rating }) => {
+     const [{ cart }, dispatch] = useStateValue();
+    const removeFromCart = ()=>{
 
-const CheckoutProduct = ({id,image,title,price,rating}) => {
+        dispatch({
+            type: 'REMOVE_FROM_CART',
+            id:id,
+        })
+    }
   return (
       <div className='checkoutProduct'>
           {/* CheckoutProduct */}
@@ -22,7 +30,7 @@ const CheckoutProduct = ({id,image,title,price,rating}) => {
                       
                   ))}
               </div>
-              <button>Remove from Cart</button>
+              <button onClick={removeFromCart}>Remove from Cart</button>
           </div>
       </div>
   )

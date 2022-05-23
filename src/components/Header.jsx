@@ -22,10 +22,14 @@ const Header = () => {
               <SearchIcon className='headerSearchIcon' />
           </div>
           <div className="headerNav">
+              <Link to="/login">
+                  
               <div className='headerOption'>
                   <span className='headerOptionLineOne'>Hello Guest</span>
                   <span className='headerOptionLineTwo'>Sign in</span>
               </div>
+            </Link>
+
               <div className='headerOption'>
                   <span className='headerOptionLineOne'>Returns</span>
                   <span className='headerOptionLineTwo'>& Orders</span>
