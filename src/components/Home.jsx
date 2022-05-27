@@ -14,7 +14,7 @@ const Home = () => {
         <div className="homeRow">
           < Product  
             id={nanoid(3)}
-            // key = {nanoid(4)}
+            key = {nanoid(4)}
             title='The Lean Startup: How Constant Invovation Creates  Radically Successful Businesses Paperback' price={1499} image="https://m.media-amazon.com/images/I/51T-sMqSMiL.jpg" rating={4} />
           {/* Product */}
           <Product  id = {nanoid(3)} title = 'Kenwood kMix Stand Mixer for Baking, Stylish Kitchen Mixer with k-beater,Dough Hook and Whisk, 5 Litre Glass Bowl' price = {4999} rating = {4} image = "https://m.media-amazon.com/images/I/31JjPYpiD2L._AC_SR320,320_.jpg" />
@@ -24,7 +24,7 @@ const Home = () => {
           {/* Product */}
           {/* Product */}
           <Product
-            // key = {nanoid(4)}
+            key = {nanoid(4)}
             
             id={nanoid(3)}
             title="Samsung LC49RG9ØSSUXEN 49' Curved LED Gaming Monitor"
@@ -32,14 +32,14 @@ const Home = () => {
             rating={3}
             image="https://m.media-amazon.com/images/I/41lRuJTbSqL._AC_SR160,160_.jpg" />
           <Product id={nanoid(3)}
-            // key = {nanoid(4)}
+            key = {nanoid(4)}
             
             title='Amazon Echo (3rd generation)|Smart speaker with Alexa, Charcoal Fabric'
             price={7999}
             rating={5}
             image="https://media.croma.com/image/upload/v1605253127/Croma%20Assets/Entertainment/Speakers%20and%20Media%20Players/Images/8878237417502.png" />
           <Product id={nanoid(3)}
-            // key = {nanoid(4)}
+            key = {nanoid(4)}
             
             title='New Apple iPad Pro (12.9-inch, Wi-Fi, 128GB) Silver (4th Generation)'
             price={12999}
@@ -51,7 +51,7 @@ const Home = () => {
         <div className="homeRow">
           {/* Product */}
           <Product
-            // key = {nanoid(4)}
+            key = {nanoid(4)}
             id = {nanoid(3)}
             title="Samsung LC49RG9ØSSUXEN 49' Curved LED Gaming Monitor Pro"
             price={23499}

@@ -30,7 +30,7 @@ const Product = ({ id, title, image, price, rating }) => {
          
     }
   return (
-      <div className='product' key={id} >
+      <div className='product'>
           {/* Product */}
 
           {/* <input type="quantity" /> */}
